@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListString1 {public static void main(String[] args) {
-//    List<String> names = new ArrayList();
+//    List<String> names = new ArrayList<>();
 //    names.add("Olena");
 //    names.add("Olga");
 //    names.add("Makar");
 //    names.add("Orest");
 //    names.add("Dmutro");
-//    List<String> names1 = new ArrayList();
+//    List<String> names1 = new ArrayList<>();
 //    names.add("Iruna");
 //    names.add("Oleg");
 //    names.add("Andrij");
@@ -20,21 +20,20 @@ public class ListString1 {public static void main(String[] args) {
 //    names.addAll(names1);
 //    System.out.println(names);
 
-//    List<Integer> a = new ArrayList<>();
-////    a.add(1);
-////    a.add(8);
-////    a.add(7);
-////    a.add(4);
-////    a.add(16);
-////    a.add(10);
-////    System.out.println(a);
+    List<Integer> a = new ArrayList<>();
+
+    for (int i = 0; i <=100; i++)
+    { a.add(i); }
+    System.out.println(a);
+    List<Integer> a1 = new ArrayList<>();
+    for (int i = 1; i <a.size(); i++){int b=a.get(i) ;if (b%2==0){a1.add(i);}
+        }System.out.println(a1);
+
+    List<Integer> a2 = new ArrayList<>();
+    for (int i = 1; i < a.size(); i++){int s=a.get(i);if (s%3==0){a2.add(i);}}
+    System.out.println(a2);
+    for (int number:a2){
+        System.out.println(number);}
+    System.out.println(a2.size());
+
 //
-//    for (int i = 1; i <=100; i++)
-////    { System.out.println(a.get(i) + " ");
-//    {
-//        a.add(i);
-//        System.out.println(a);}
-//
-//        for (Integer s:a){if (s%3==0) System.out.println(s);}
-//
-    }}
