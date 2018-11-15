@@ -1,6 +1,14 @@
 package Computer;
 
 public abstract class Opersustema {
-    String nazva;
+    private String nazva;
+    public Opersustema(String nazva){this.nazva=nazva;}
 
+    public String getNazva() {
+        return nazva;
+    }
+
+    public void setNazva(String nazva) {
+        this.nazva = nazva;
+    }
 }

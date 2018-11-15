@@ -1,6 +1,6 @@
 package Computer;
 
 public class Linux extends Opersustema {
-    String nazva;
-    Linux(String b){this.nazva=b;}
+    private String nazva;
+    Linux(String nazva){super(nazva);}
 }

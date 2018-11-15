@@ -1,6 +1,8 @@
 package Computer;
 
 public class Windows extends Opersustema {
-    String nazva;
-    Windows(String a){this.nazva=a;}
-}
+    private String nazva;
+    Windows(String nazva){super (nazva);}
+
+    }
+

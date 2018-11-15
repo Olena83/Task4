@@ -1,20 +1,30 @@
 package Computer;
 
-public class Comp {
-    String name;
-    int hardDriveSpaсe;
+public class Comp <T> {
+    private String name;
+   private int hardDriveSpaсe;
+    private T os;
 
-    Comp (String Newname,int Newhard){this.name=Newname;this.hardDriveSpaсe=Newhard;}
+    public Comp (String Newname,int Newhard,T os){this.name=Newname;this.hardDriveSpaсe=Newhard;this.os=os;}
 
-    public void Parametru (Opersustema z){
-        System.out.println
-                ( "Назва компа: "+ name +" ,память становить :" + hardDriveSpaсe +
-                        "ГБ "+", назва оперсистеми "+ z.getClass().getName());}
-        public void Parametru1 (Opersustema z1){
-        System.out.println( "Назва компа: "+ name +" ,память становить :" + hardDriveSpaсe +
-                "ГБ "+", назва оперсистеми "+ z1.getClass().getName());}
-    public void Parametru2 (Opersustema z2){
-        System.out.println("Назва компа: "+ name +" ,память становить :" + hardDriveSpaсe +
-                "ГБ "+", назва оперсистеми "+ z2.getClass().getName());
+        public String getName() {
+            return name; }
+
+        public void setName(String name) {
+            this.name = name; }
+
+        public T getOs() {
+            return os; }
+
+        public void setOs(T os) {
+            this.os = os; }
+
+        public int getHardDriveSpaсe() {
+            return hardDriveSpaсe;
+        }
+
+        public void setHardDriveSpaсe(int hardDriveSpaсe) {
+            this.hardDriveSpaсe = hardDriveSpaсe; }
+
     }
-}
+
