@@ -14,6 +14,7 @@ public class appkid {public static void main (String[] args) {
     for(Kid  p : kids){
         System.out.println(p.getAge() + " " + p.getName());
 
+
 }
-}
-}
+}}
+
