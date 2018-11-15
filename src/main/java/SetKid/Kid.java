@@ -3,7 +3,8 @@ package SetKid;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Kid implements Comparable <Kid> {
+//public class Kid implements Comparable <Kid> {
+public class Kid{
     private String name;
     private int age;
 
@@ -39,11 +40,11 @@ public class Kid implements Comparable <Kid> {
         return Objects.hash(name, age);
     }
 
-    @Override
-    public int compareTo(Kid o) {
-        return name.compareTo(o.getName());
+//    @Override
+//    public int compareTo(Kid o) {
+//        return name.compareTo(o.getName());
 
 
-    }}
+    }
 
 
